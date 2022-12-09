@@ -30,9 +30,13 @@ Things to change when first creating a module:
   ```bash
   task infra:validate
   ```
-- To verify you can plan the Terraform in this folder:
+- To plan the infrastructure in this folder:
   ```bash
   task infra:plan
+  ```
+- To plan specific resources of infrastructure in this folder:
+  ```bash
+  task infra:plan -- -target='cloudflare_record.this'
   ```
 
 ### 🆒 Extras:
