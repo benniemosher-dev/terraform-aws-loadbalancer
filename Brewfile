@@ -1,0 +1,6 @@
+brew 'tfenv'
+brew 'infracost'
+brew 'terraform-docs'
+brew 'tflint'
+brew 'tfsec'
+brew 'go-task/tap/go-task'

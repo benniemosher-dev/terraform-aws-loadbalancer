@@ -30,3 +30,5 @@ override.tf.json
 
 infracost.json
 .infracost
+
+Brewfile.lock.json
