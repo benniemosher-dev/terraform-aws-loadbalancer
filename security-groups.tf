@@ -37,11 +37,13 @@ resource "aws_security_group" "service" {
   revoke_rules_on_delete = true
 
   ingress {
-    description     = "Allow all ingress from Load Balancer security group."
-    from_port       = 0
-    protocol        = "-1"
-    security_groups = ["${aws_security_group.load-balancer.id}"]
-    to_port         = 0
+    description = "Allow all ingress from Load Balancer security group."
+    from_port   = 0
+    protocol    = "-1"
+    security_groups = [
+      aws_security_group.load-balancer.id
+    ]
+    to_port = 0
   }
 
   tags = {
