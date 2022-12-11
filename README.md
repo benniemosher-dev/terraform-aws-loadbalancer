@@ -1,14 +1,6 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- PROJECT SHIELDS -->
-  <!--
-  *** I'm using markdown "reference style" links for readability.
-  *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-  *** See the bottom of this document for the declaration of the reference variables
-  *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-  *** https://www.markdownguide.org/basic-syntax/#reference-style-links
-  -->
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -17,11 +9,15 @@
 [![MIT License][license-shield]][license-url]
 [![Workflow][workflow-shield]][workflow-url]
 
-  <h1>terraform-module</h1>
-  <p>🧱 A Terraform module template repo 🧱</p>
-  <p>
-    <a href="https://github.com/benniemosher-dev/terraform-module">Explore the docs</a> | <a href="https://github.com/benniemosher-dev/terraform-module">View Demo</a> | <a href="https://github.com/benniemosher-dev/terraform-module/issues">Report Bug</a> | <a href="https://github.com/benniemosher-dev/terraform-module/issues">Request Feature</a>
-  </p>
+# terraform-module
+
+🧱 A Terraform module template repo 🧱
+
+[Explore the docs](https://github.com/benniemosher-dev/terraform-module) |
+[View Demo](https://github.com/benniemosher-dev/terraform-module) |
+[Report Bug](https://github.com/benniemosher-dev/terraform-module/issues) |
+[Request Feature](https://github.com/benniemosher-dev/terraform-module/issues)
+
 </div>
 
 <!-- TABLE OF CONTENTS -->
