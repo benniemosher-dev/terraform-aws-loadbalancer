@@ -10,7 +10,5 @@ jobs:
   ci-terraform:
     name: Continuous Integration for Terraform
     uses: "benniemosher-dev/.github/.github/workflows/ci-terraform.yml@main"
-    with:
-      enable-cost: false
     secrets:
       INFRACOST_API_KEY: ${{ secrets.INFRACOST_API_KEY }}
