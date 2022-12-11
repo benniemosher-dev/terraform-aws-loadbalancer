@@ -49,13 +49,11 @@ resource "aws_security_group" "service" {
 }
 
 resource "aws_security_group_rule" "service" {
-  description = "Allow all ingress from Load Balancer security group."
-  from_port   = 0
-  prefix_list_ids = [
-    aws_security_group.load-balancer.id
-  ]
-  protocol          = "-1"
-  security_group_id = aws_security_group.service.id
-  to_port           = 0
-  type              = "ingress"
+  description              = "Allow all ingress from Load Balancer security group."
+  from_port                = 0
+  protocol                 = "-1"
+  security_group_id        = aws_security_group.service.id
+  source_security_group_id = aws_security_group.load-balancer.id
+  to_port                  = 0
+  type                     = "ingress"
 }
