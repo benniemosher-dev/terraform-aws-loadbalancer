@@ -30,30 +30,21 @@ resource "aws_security_group_rule" "https-ingress" {
   type              = "ingress"
 }
 
+# TODO: Move this rule into it's own resource
 resource "aws_security_group" "service" {
   description            = "Allow all ingress from Load Balancer security group."
   name                   = "ecs-service-load-balancer"
   revoke_rules_on_delete = true
 
-  # ingress {
-  #   description     = "Allow all ingress from Load Balancer security group."
-  #   from_port       = 0
-  #   protocol        = "-1"
-  #   security_groups = ["${aws_security_group.load-balancer.id}"]
-  #   to_port         = 0
-  # }
+  ingress {
+    description     = "Allow all ingress from Load Balancer security group."
+    from_port       = 0
+    protocol        = "-1"
+    security_groups = ["${aws_security_group.load-balancer.id}"]
+    to_port         = 0
+  }
 
   tags = {
     Name = "ecs-service-load-balancer"
   }
-}
-
-resource "aws_security_group_rule" "service" {
-  description              = "Allow all ingress from Load Balancer security group."
-  from_port                = 0
-  protocol                 = "-1"
-  security_group_id        = aws_security_group.service.id
-  source_security_group_id = aws_security_group.load-balancer.id
-  to_port                  = 0
-  type                     = "ingress"
 }
