@@ -1,13 +1,14 @@
 <a name="readme-top"></a>
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+<div align="center">
+  <!-- PROJECT SHIELDS -->
+  <!--
+  *** I'm using markdown "reference style" links for readability.
+  *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+  *** See the bottom of this document for the declaration of the reference variables
+  *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+  *** https://www.markdownguide.org/basic-syntax/#reference-style-links
+  -->
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -16,7 +17,6 @@
 [![MIT License][license-shield]][license-url]
 [![Workflow][workflow-shield]][workflow-url]
 
-<div align="center">
   <h1>terraform-module</h1>
   <p>🧱 A Terraform module template repo 🧱</p>
   <p>
@@ -48,7 +48,7 @@ Things to change when first creating a module:
 - [ ] In `.github/workflows/ci-terraform.yml` delete lines 13-14 enabling cost
 - [ ] In `README.md` delete the [TODO](README.md#todo) section
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+([back to top](#readme-top))
 
 ## 📜 Usage:
 
@@ -100,7 +100,7 @@ Things to change when first creating a module:
   task infra:sec
   ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+([back to top](#readme-top))
 
 ## 📋 Documentation
 
@@ -139,7 +139,7 @@ No outputs.
 
 <!-- END_TF_DOCS -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+([back to top](#readme-top))
 
 [aws-shield]: https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white
 [aws-url]: https://aws.amazon.com/
