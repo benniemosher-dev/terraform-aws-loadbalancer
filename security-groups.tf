@@ -31,6 +31,7 @@ resource "aws_security_group_rule" "https-ingress" {
 }
 
 # TODO: Move this rule into it's own resource
+# checkov:skip=CKV2_AWS_5:This security group is an output for callers to attach to their ECS services
 resource "aws_security_group" "service" {
   description            = "Allow all ingress from Load Balancer security group."
   name                   = "ecs-service-load-balancer"
