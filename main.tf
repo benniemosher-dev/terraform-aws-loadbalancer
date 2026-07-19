@@ -1,7 +1,7 @@
 # TODO: Make this internal
 # tfsec:ignore:aws-elb-alb-not-public
-# checkov:skip=CKV_AWS_91:Access logging requires an S3 bucket configured by the caller
-# checkov:skip=CKV_AWS_152:Cross-zone load balancing applies to NLB/GLB, not ALB
+#checkov:skip=CKV_AWS_91:Access logging requires an S3 bucket configured by the caller
+#checkov:skip=CKV_AWS_152:Cross-zone load balancing applies to NLB/GLB, not ALB
 resource "aws_alb" "this" {
   load_balancer_type = var.config.load-balancer-type
   name               = var.config.cluster-name
@@ -20,7 +20,7 @@ resource "aws_alb" "this" {
   ]
 }
 
-# checkov:skip=CKV_AWS_378:HTTP is used only for internal ALB-to-backend communication; public traffic enforces HTTPS via redirect
+#checkov:skip=CKV_AWS_378:HTTP is used only for internal ALB-to-backend communication; public traffic enforces HTTPS via redirect
 resource "aws_lb_target_group" "this" {
   name        = var.config.cluster-name
   port        = 80
@@ -39,8 +39,8 @@ resource "aws_lb_target_group" "this" {
   ]
 }
 
-# checkov:skip=CKV_AWS_2:HTTP listener exists solely to redirect all traffic to HTTPS
-# checkov:skip=CKV_AWS_103:HTTP redirect listener has no TLS; TLS 1.2 is enforced on the HTTPS listener
+#checkov:skip=CKV_AWS_2:HTTP listener exists solely to redirect all traffic to HTTPS
+#checkov:skip=CKV_AWS_103:HTTP redirect listener has no TLS; TLS 1.2 is enforced on the HTTPS listener
 resource "aws_lb_listener" "this" {
   load_balancer_arn = aws_alb.this.arn
   port              = 80
