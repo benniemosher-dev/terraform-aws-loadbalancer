@@ -6,7 +6,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
-permissions: read-all
+permissions:
+  actions: read
+  contents: read
+  security-events: write
 
 jobs:
   ci-terraform:
