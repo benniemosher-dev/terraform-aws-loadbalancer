@@ -4,6 +4,8 @@ variable "config" {
     allowed-ingress-cidrs = list(string)
     certificate           = optional(string, null)
     cluster-name          = string
+    deletion-protection   = optional(bool, false)
+    health-check-path     = optional(string, "/")
     load-balancer-type    = optional(string, "application")
     subnets               = list(string)
     vpc                   = string

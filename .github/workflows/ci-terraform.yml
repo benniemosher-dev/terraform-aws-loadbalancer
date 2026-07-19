@@ -6,6 +6,12 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  actions: read
+  contents: read
+  pull-requests: write
+  security-events: write
+
 jobs:
   ci-terraform:
     name: Continuous Integration for Terraform
