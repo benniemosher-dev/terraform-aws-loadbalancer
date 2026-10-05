@@ -15,6 +15,6 @@ permissions:
 jobs:
   ci-terraform:
     name: Continuous Integration for Terraform
-    uses: "benniemosher-dev/.github/.github/workflows/ci-terraform.yml@db8156445cc8da73f49cdb019a12060a3e655a40" # v1.0.3
+    uses: "benniemosher-dev/.github/.github/workflows/ci-terraform.yml@5ca06cf92808c8beee39c82417374081374ee1b5" # v1.1.1
     secrets:
       INFRACOST_API_KEY: ${{ secrets.INFRACOST_API_KEY }}
